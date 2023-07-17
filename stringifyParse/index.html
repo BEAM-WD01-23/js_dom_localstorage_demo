@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JSON stringify and parse</h2>
+
+    <!-- 1 -->
+    <h3>JSON Stringify</h3>
+
+    <!-- 2 -->
+    <h3>JSON Parse</h3>
+
+
+
+    <script>
+// 1
+        const employee = {
+            name: 'Ahemd',
+            age: 30,
+            profession: 'Developer'
+        }
+        //console.log(employee);
+        let convertObjToString = JSON.stringify(employee);
+        //console.log(typeof `${convertObjToString}`);
+        //
+//2
+        //
+        const givenString = '{"name":"Ahemd","age":30,"profession":"Developer"}';
+        const convertStringToObj = JSON.parse(givenString);
+        //console.log(typeof convertStringToObj);
+
+    </script>
+</body>
+</html>
